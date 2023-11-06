@@ -1,0 +1,98 @@
+
+<header>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".nav-link").click(function(){
+        // Encuentra la pestaña activa actual y remueve la clase 'active'
+        $(".tab-pane.active").removeClass("show active");
+
+        // Encuentra la pestaña correspondiente al enlace en el que se hizo clic y agrega la clase 'active'
+        var tabId = $(this).attr("href");
+        $(tabId).addClass("show active");
+      });
+    });
+  </script>
+  <img src="/assets/imagenes/colegio.png" alt="Logo" id="header-logo">
+  <h1>IEP N° 20188 - Inicial 627 "Centro de Mujeres"</h1> <!-- Añade tu texto aquí -->
+  <div class="header-top">
+  <nav>
+    <a routerLink="/dashboard">Dashboard</a>
+    <a routerLink="/login">Ingresar</a>
+    <a routerLink="/documents">Documentos</a>
+    <!-- Agrega más enlaces aquí -->
+  </nav>
+  </div>
+</header>
+<main>
+  <div class="content-wrapper">
+    <div class="tabs-wrapper">
+  <mat-tab-group animationDuration="900ms">
+    <mat-tab label="Somos"> 
+      <p></p>
+      <p>La IEP N° 20188 - Inicial 627 atiende a los niveles de </p>      
+      <p>inicial, primaria y secundaria que fue creada en 1912 </p>
+      <p>con el nombre de centro educativo estatal primaria de menores.</p>
+      <p>Tiene como fin educativo atender a todos los estudiantes de la Comunidad Cañetana </p>
+      <p></p>
+    </mat-tab>
+    <mat-tab label="Mision"> 
+      <p></p>
+      <p>- Educar a niñas y adolescentes con diferentes habilidades.</p>
+      <p>- Formar personas exitosas, competentes, capaces de resolver problemas en la sociedad.</p>
+      <p>- Desarrollar conocimiento y comprensión del mundo que la rodea.</p>
+      <p>- Aplicar estrategias innovadoras para el proceso de enseñanza.</p>  
+      <p></p>
+    </mat-tab>
+    <mat-tab label="Vision"> 
+      <p></p>
+      <p>Ser reconocido como una IE. Emblemática.</p>
+      <p>Estar acreditada en la aplicación de metodologías inductivas y tecnológicas.</p>
+      <p></p>
+    </mat-tab>
+    <mat-tab label="Valores">
+      <p></p>
+      <p>- Tolerancia.</p>
+      <p>- Responsabilidad.</p>
+      <p>- Respeto.</p>
+      <p>- Empatía.</p>
+      <p>- Honestidad.</p>
+      <p>- Compromiso.</p>
+      <p>- Igualdad.</p>
+      <p>- Confianza.</p>
+      <p>- Inclusión.</p>
+      <p></p>
+    </mat-tab>
+  </mat-tab-group>
+</div>
+  <div id="fb-root"></div>
+    <div class="fb-page" data-href="https://www.facebook.com/IEP20188INICIAL627/" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+      <blockquote cite="https://www.facebook.com/IEP20188INICIAL627/" class="fb-xfbml-parse-ignore">
+        <a href="https://www.facebook.com/IEP20188INICIAL627/">IEP 20188 - 627 "Centro de Mujeres"</a>
+      </blockquote>
+    </div>
+  </div>
+</main>
+<footer>
+    <div class="contacto">
+      <div class="columna">
+        <img src="/assets/imagenes/LOGO CONTACTO.png" alt="Logo" id="contacto-logo"> <!-- Añade tu logo aquí -->
+        <p><i class="fas fa-map-marker-alt"></i> Prolongación José Gálvez S/N, San Vicente</p>
+        <p><i class="fas fa-map"></i> <a href="https://goo.gl/maps/6NTBd9xiVjWnQpyM7" class="no-outline"> Google maps</a></p>
+        <p><i class="fas fa-phone"></i> 01 3081633</p>
+        <p><i class="fas fa-mobile-alt"></i> +51 983 531 508</p>
+        <div class="redes-sociales">
+          <a href="https://www.facebook.com/IEP20188INICIAL627/" target="_blank">
+            <img src="/assets/imagenes/facebook.png" alt="Facebook">
+          </a>        
+        </div>
+      </div>
+    </div>
+  </footer>
+  <button id="back-to-top" (click)="scrollToTop()" [style.display]="showButton ? 'block' : 'none'">
+    <i class="fas fa-arrow-up"></i>
+</button>

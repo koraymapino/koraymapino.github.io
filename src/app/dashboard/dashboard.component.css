@@ -1,0 +1,13 @@
+.dashboard {
+    padding: 20px;
+  }
+  
+  .widgets {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .widget {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
